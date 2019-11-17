@@ -12,7 +12,7 @@ if [ $(docker image ls -q --filter reference=my_app_db) != '' ]; then
 fi
 
 # build the image
-#docker build -t my_app_db .
+docker build -t my_app_db .
 
 # start the container
-#docker run -itd -p 9099:3306 --name my_app_db_container my_app_db
+docker run -itd -p 9099:3306 --name my_app_db_container my_app_db

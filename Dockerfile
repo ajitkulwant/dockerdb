@@ -1,5 +1,5 @@
 # download the required mysql base image
-FROM mysql:5.7
+FROM 200.0.1.1:5000/mysql
 
 # set the environment variables
 ENV MYSQL_ROOT_PASSWORD=root
